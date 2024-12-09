@@ -1,0 +1,43 @@
+---
+title: Erprobte Software
+
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+
+
+
+Die folgende Auswahl von Software wird in diesem Buch verwendet oder diskutiert. Für ihre Auswahl waren die folgenden Kriterien leitend:
+
+Die Software
+
+- sollte frei und quelloffen sein
+- sollte in professionellen Arbeitsprozessen Einsatz finden
+- sollte in Gruppen nutzbar sein, um Diskussion über das Erfahrene zu ermöglichen
+- hat sich in Workshops und Lernsituationen als geeignet erwiesen
+
+| Schritte                                                                                            | Software                                                                                            | Erläuterung                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 2, 3, 4                                                                                             | [**Jupyter Notebook**](https://jupyter.org/)                                                        | Entwicklungsumgebung im Browser[^2], auch als [Hub](https://tljh.jupyter.org/en/latest/index.html#) |
+| 4                                                                                                   | [**MediaPipe**](https://developers.google.com/mediapipe)                                            | offene Bibliotheken für div. KI-Anwendungen                                                         |
+| 1, 2                                                                                                | [**Label Studio**](https://labelstud.io/)                                                           | (kollaborative) Bearbeitung von Trainingsdaten                                                      |
+| 2, 3, 4                                                                                             | [**spaCy**](https://spacy.io/)                                                                      | Python-Bibliothek für Natural Language Processing (NLP)                                             |
+| 3                                                                                                   | [**Teachable Machine**](https://teachablemachine.withgoogle.com/)                                   | webbasiertes Tool, um Modelle zu trainieren                                                         |
+| 2, 3, 5                                                                                             | [**ml5.js**](https://ml5js.org/)                                                                    | ML-/DL-Modelle mit [p5.js](https://p5js.org/) im Browser zu nutzen                                  |
+| 4, 5                                                                                                | [**Jan.ai**](https://www.jan.ai/)                                                                   | LLMs offline verwenden und vergleichen                                                              |
+| 4, 5                                                                                                | [**Ollama**](https://ollama.com/)                                                                   | LLMs offline verwenden und vergleichen                                                              |
+| 4, 5                                                                                                | [**PoseBlocks**](https://playground.raise.mit.edu/create/)                                          | Scratch-basierte Umgebung für KI-Anwendungen                                                        |
+| 4, 5                                                                                                | [**Gradio**](https://www.gradio.app/)                                                               | Python-Bibliothek für interaktive KI-Interfaces                                                     |
+| 5                                                                                                   | [**LangChain**](https://python.langchain.com/docs/get_started/introduction/)                        | Python-Bibliothek für LLM-Apps                                                                      |
+| 1-5                                                                                                 | [**Hugging Face**](https://huggingface.co/)                                                         | Plattform für Daten, Modelle und Anwendungen                                                        |
+
+: Auswahl erprobter Software für praxisorientiertes Nachvollziehen der Entwicklungsschritte von KI-Systemen 
+
+<Aside>
+Die Ziffern der ersten Spalte zeigen an, für welche Abschnitte des Entwicklungsprozesses von KI-Systemen die Software geeignet sein könnte:\
+1)&nbsp;Daten sammeln, 2)&nbsp;Daten aufbereiten, 3)&nbsp;Modelle trainieren, 4)&nbsp;Anwendungen entwickeln, 5)&nbsp;Modelle evaluieren
+</Aside>
+
+[^2]: Weit verbreitet ist auch [Google Colab](https://colab.research.google.com/), das allerdings datenschutzmäßig kritisch und nicht quelloffen ist, jedoch kostenlose GPU-Rechenzeit zur Verfügung stellt.
+[^3]: [scikit-learn](https://scikit-learn.org/stable/), [Tensorflow](https://www.tensorflow.org/) und [PyTorch](https://pytorch.org/) sind ebenfalls quelloffen und zentral für die offene KI-Entwicklung, bieten sich aber nicht unbedingt für soziale Lernsituationen an.
