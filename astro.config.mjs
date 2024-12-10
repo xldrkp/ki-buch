@@ -7,7 +7,7 @@ import { astroExpressiveCode } from '@astrojs/starlight/expressive-code';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'KI verstehen',
+			title: 'Entwicklung von KI verstehen',
 			defaultLocale: 'root',
 			locales: {
 				// English docs in `src/content/docs/en/`
@@ -48,24 +48,33 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Daten finden oder erheben',
-					autogenerate: { directory: 'daten-nutzen' },
+					label: 'Hintergrund',
+					items: [
+						{
+							label: '1. Daten finden oder erheben',
+							autogenerate: { directory: 'daten-nutzen' },
+						},
+						{
+							label: '2. Daten aufbereiten',
+							autogenerate: { directory: 'reference' },
+						},
+						{
+							label: '3. Modelle trainieren',
+							autogenerate: { directory: 'reference' },
+						},
+						{
+							label: '4. Modelle evaluieren',
+							autogenerate: { directory: 'reference' },
+						},
+						{
+							label: '5. Anwendungen entwickeln',
+							autogenerate: { directory: 'reference' },
+						},
+					],
 				},
 				{
-					label: 'Daten aufbereiten',
-					autogenerate: { directory: 'reference' },
-				},
-				{
-					label: 'Modelle trainieren',
-					autogenerate: { directory: 'reference' },
-				},
-				{
-					label: 'Anwendungsentwicklung',
-					autogenerate: { directory: 'reference' },
-				},
-				{
-					label: 'Modelle evaluieren',
-					autogenerate: { directory: 'reference' },
+					label: 'Tutorials',
+					autogenerate: { directory: 'tutorials' },
 				},
 			],
 		}),
