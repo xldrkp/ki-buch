@@ -53,28 +53,34 @@ export default defineConfig({
 						{
 							label: '1. Daten finden oder erheben',
 							autogenerate: { directory: 'daten-nutzen' },
+							collapsed: true,
 						},
 						{
 							label: '2. Daten aufbereiten',
 							autogenerate: { directory: 'reference' },
+							collapsed: true,
 						},
 						{
 							label: '3. Modelle trainieren',
 							autogenerate: { directory: 'reference' },
+							collapsed: true,
 						},
 						{
 							label: '4. Modelle evaluieren',
 							autogenerate: { directory: 'reference' },
+							collapsed: true,
 						},
 						{
 							label: '5. Anwendungen entwickeln',
 							autogenerate: { directory: 'reference' },
+							collapsed: true,
 						},
 					],
 				},
 				{
 					label: 'Tutorials',
 					autogenerate: { directory: 'tutorials' },
+					collapsed: true,
 				},
 			],
 		}),
